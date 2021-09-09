@@ -1,0 +1,138 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{../../Látex/Gabriel.jpg}
+\name{Gabriel E.}{Morejón López}
+\position{SysAdmin{\enskip\cdotp\enskip}Experto Forense{\enskip\cdotp\enskip}Desarrollador de Software}
+\address{Cdla. Los Cedros, Av. José Ma. Urbina, 2da transversal y 1era paralela vía a Crucita Km 1 1/2, Portoviejo, Manabí, EC130111, Ecuador}
+
+\mobile{(+593) 99-597-4963}
+\email{gabrielmorejon@gmail.com}
+\homepage{www.grupofmo.com}
+\github{elgabo82}
+\linkedin{gabriel-eduardo-morejón-lópez-4b098a70}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+\quote{``Sé el cambio que quieres ver en el mundo."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Equipo de Reclutamiento de Cualquier lugar}
+  {Alguna posibilidad\\Alguna Ciudad\\Algún País}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Carta de Presentación}
+%\lettertitle{Carta de Presentación (Spanish-speaking)}
+% How the letter is opened
+\letteropening{Querido Equipo de \textit{Cualquier cosa}}
+% How the letter is closed
+\letterclosing{Sinceramente,}
+% Any enclosures with the letter
+\letterenclosure[Adjunto]{Hoja de Vida}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Gabriel E. Morejón López ~~~·~~~ Carta de Presentación}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{Acerca}
+Apasionado por la tecnología, usuario asiduo de FLOSS (Free / Libre / OpenSource). Me gusta investigar y probar con nuevas tecnologías.
+
+\lettersection{Por qué cualquier lugar?}
+Son un referente en el sector tecnológico, cuentan con un enorme equipo de trabajo que buscan un objetivo común; La mejora continua y el desarrollo tecnológico. Junto a Ustedes de seguro lograré desarrollo profesional y personal.
+
+\lettersection{Por qué Yo?}
+Poseo los conocimientos técnicos necesarios para ocupar cargos técnicos; con base en, mi experiencia y continuo aprendizaje. Como mencioné previamente; con Ustedes de seguro lograré un gran desarrollo profesional y personal.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}

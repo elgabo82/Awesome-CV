@@ -1,0 +1,137 @@
+%%!TEX TS-program = xelatex
+%%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{../../Látex/Gabriel.jpg}
+\name{Gabriel E.}{Morejón López}
+\position{Software Developer{\enskip\cdotp\enskip}Forensics Expert{\enskip\cdotp\enskip}SysAdmin}
+\address{Cdla. Los Cedros, Av. José Ma. Urbina, 2da transversal y 1era paralela vía a Crucita Km 1 1/2, Portoviejo, Manabí, EC130111, Ecuador}
+
+\mobile{(+593) 99-597-4963}
+\email{gabrielmorejon@gmail.com}
+\homepage{www.grupofmo.com}
+\github{elgabo82}
+\linkedin{gabriel-eduardo-morejón-lópez-4b098a70}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+\quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Canonical Recruitment Team}
+  {Canonical.\\London\\United Kingdom}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Linux Support Engineer (Home based-EMEA)}
+% How the letter is opened
+\letteropening{Dear Canonical Recruitment Team,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Gabriel E. Morejón López ~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+Passionate about technology, FLOSS (Free / Libre / OpenSource) and doing research on everything that can be learned. I love my family and I really like activities like reading, soccer, table tennis and other things that I used to do much more frequently. 
+
+\lettersection{Why Canonical?}
+I am excited to apply as a Linux Support Engineer, you are a leading company in the market for Linux desktop users, servers and IoT devices, you are a personal, professional and family challenge, which I would like to put to proof; You are part of a culture that motivates success and teamwork.
+
+\lettersection{Why Me?}
+I have the technical knowledge that allows me to attend to typical technological situations and, at the same time, to be learning continuously; OpenSource evokes the spirit of self-learning and collaboration and is a philosophy that has been part of my life for 20 years now, therefore I consider myself a suitable candidate for the position. 
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
